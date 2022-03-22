@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <title>Practica</title>
+    <body>
+       <h1 style="color: rgba(3, 87, 14, 0.568);text-align: center;">Este es un documento para aprender</h1><hr/>
+       <p style="text-align:justify;text-align: center;"> En esta practica veremos los que son los strings lo cual son: cadenas de textos. <br/>
+       Para abrir una cadena de textos usamos el comando new string("x") pero tambien se puede solo usar dos comillas o comillas simples, <br/>  con estas tres formas podemos abrir una cadena de texto, 
+    agregando length podemos saber con cuantos <br/> catacteres cuenta nuestra cadena de texto. </p>>
+    <br/><br/> <h1 style="color: black; text-align: center;">Métodos</h1>
+    <ul>
+        <li> ncadena hace referencia a cadena de texto.</li>
+        <li>ncadena.toUpperCase() nos sirve para poner una cadena de texto en mayusculas.</li>
+        <li>ncadena.tolowercase() nos sirve para poner una cadena de texto en minusculas</li>
+        <li>El comando: ncadena.includes("palabra") sirve para buscar si se encuentra una palabra en la cadena de texto</li>
+        <li>ncadena.trim() sirve para quitar los espacios en blanco de una cadena de texto</li>
+        <li>ncadena.split(" espacio ") este metodo dirve para agregar algo en los espacios en blanco de una cadena</li>
+    </ul>
+     <h1 style="text-align: center; color: blueviolet;">Template string</h1><br>
+     <p style="text-align :center;"> En este caso veremos lo que es template strings: <br> <br>
+     los template strings nos sirven para poder unir cadenas de textos con variables por ejemplo: let saludo=
+     `Hola mi nombre es ${nombre} ${apellido}.`; de esta manera estariamos mezclando la cadena de caracteres con variables que son nombre y apellido <br> <br>
+    </p>
+        <script>
+            {
+            //cadenas de textos
+            let casa= new String("Parangaricuatirimicuaro");
+            let mayusculas= "minusculas";
+            let minusculas="mayusculas";
+            console.log(casa);
+            console.log(mayusculas.toUpperCase(),minusculas.toLowerCase())
+            let texto="      Este es un documento para aprender           ";
+            console.log(texto.includes("documento"))
+            console.log(texto.trim())
+            //template strings
+            }
+            {
+            let nombre="Hugo"
+            let apellido="Nogueda"
+            let  tunombrees=`Hola mi nombre es ${nombre} ${apellido}.`
+            console.log(tunombrees)
+            }
+        </script>
+    </body>
+</html>

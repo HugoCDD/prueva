@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+  <script>
+    let decicion=prompt("Calculadora = 1, calcular ecuacion cuadratica= 2 ")
+    if(decicion==1){
+      let decicion=parseFloat(prompt("(+ = 1),(- = 2),(x = 3),(/ = 4),(√ = 5)"))
+      var suma=0;
+      var resta=0;
+      var mult=0;
+    if(decicion==1){
+      do{
+      do{
+        let num1=parseFloat(prompt("numero")) 
+        var salir=parseFloat(prompt("Resultado = 1, seguir sumando 0 "))
+        suma=suma+num1
+      } while(salir===0)
+        console.log("Suma:")
+        console.log(suma)
+        var resultadofinal=prompt(`El resultado de la suma es: ${suma} (coloca 1 para hacer otra suma/0 para finalizar)`)
+      } while(resultadofinal==1)
+      
+      }else{
+        if(decicion==2){
+          do{
+          let num1=parseFloat(prompt("numero 1")) 
+          let num2=parseFloat(prompt("numero 2")) 
+          resta=num1-num2
+          console.log("resta:")
+          console.log(resta)
+          var resultadofinal2=prompt(`El resultado de la resta es: ${resta} (coloca 1 para hacer otra resta/0 para terminar)`)
+          }while(resultadofinal2==1)
+        
+        }else{
+          if(decicion==3){
+            do{
+            let num1=parseFloat(prompt("numero 1")) 
+            let num2=parseFloat(prompt("numero 2")) 
+            mult=num1*num2
+            var resultadofinal3=prompt(`El resultado de la multiplicacion es: ${mult} (coloca 1 para hacer otra multiplicacion/0 para finalizar)`)
+            } while(resultadofinal3==1)
+          }else{
+            if(decicion==4){
+              do{
+          let num1=parseFloat(prompt("numero 1")) 
+          let num2=parseFloat(prompt("numero 2")) 
+          let div=num1/num2
+          var resultadofinal4=prompt(`El resultado de la divicion es: ${div} (coloca 1 para hacer otra divicion/0 para terminar)`)
+          }while(resultadofinal4==1)
+            }else{
+              do{
+          let num1=parseFloat(prompt("numero 1")) 
+          let raiz=Math.sqrt(num1)
+          var resultadofinal5=prompt(`El resultado de la raiz cuadrada es: ${raiz} (coloca 1 para hacer otra raiz cuadrada/0 para terminar)`)
+          }while(resultadofinal4==1)
+            }
+          }
+        }
+      }
+    }else{
+    do{
+     //Formula Cuadratica
+    let a=prompt("Coloca el dato a")
+    let b=prompt("Coloca el dato b")
+    let c=prompt("Coloca el dato c")
+    let segundo=Math.sqrt((b*b)-(4*a*c))
+    let primer=-(b)
+    let resultado=primer+segundo
+    let resultado2=primer-segundo
+    let tres=2*a
+    let cantidad = resultado/tres
+    let cantidad2 =resultado2/tres
+    console.log("Operacion cuadrática")
+    console.log(`S={${cantidad},${cantidad2}}`)
+    var resultado3=prompt(`S={${cantidad},${cantidad2}} (Coloca 1 para volver a hacer otra operacion/0 para finalizar)`)
+    }while(resultado3==1)
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora2.0</title>
+</head>
+<body>
+    <script>
+        do{
+      let num1=parseFloat(prompt("numero 1")) 
+      let decicion=prompt(" coloca un operador (+),(-),(x),(/),(√ = r)")
+      let num2=parseFloat(prompt("numero2 ")) 
+      var suma=0;
+      var resta=0;
+      var mult=0;
+    if(decicion==="+"){
+        suma=num1+num2
+        console.log("Suma:")
+        console.log(suma)
+        let resultadofinal=prompt(`El resultado de la suma es: ${suma}  (enter para continuar)`)         
+      }else{
+        if(decicion==="-"){
+          resta=num1-num2
+          console.log("resta:")
+          console.log(resta)
+          var resultadofinal2=prompt(`El resultado de la resta es: ${resta} (enter para continuar)`)           
+        }else{
+          if(decicion==="x"){
+            mult=num1*num2
+            var resultadofinal3=prompt(`El resultado de la multiplicacion es: ${mult} (enter para continuar)`)                     
+           }else{
+            if(decicion==="/"){
+          let div=num1/num2
+          var resultadofinal4=prompt(`El resultado de la divicion es: ${div} (enter para continuar)`)                    
+            }else{
+            if(decicion==="r"){
+          let raiz=Math.sqrt(num1+num2)
+          var resultadofinal5=prompt(`El resultado de la raiz cuadrada de la suma del numero 1 y 2 es igual a: ${raiz}      (enter para continuar)`)
+
+             }
+            }
+          }
+        }
+      }
+      var salir=(prompt("colaca s si quieres continuar haciendo operaciones n si no s/n"))
+    }while(salir==="s")
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-let numeros=[1,2,3,4,5,6,7,8,9];
+let numeros=[1,2,3,4,5,6,7,8,9];//Hugo David Nogueda Hernández
         let x=0;
         let y=1;
         let z=2;

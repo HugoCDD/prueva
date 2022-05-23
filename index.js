@@ -34,7 +34,8 @@ let numeros=[1,2,3,4,5,6,7,8,9];//Hugo David Nogueda Hernández
         let v=2;
         for(i=0;i<3;i++){
             console.log(numeros[n],numeros[m], numeros[v]);
-            n=n-1;
-            m=m-1;
-            v=v-1;
+            n--;
+            m--;
+            v--;
         }
+        

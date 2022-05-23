@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           
+           //5) Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH".
+           //6) Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2.
+           //7) Programa una función que valide si una palabra o frase dada, es un palíndromo (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true.
+           //8) Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5.
+           //9) Programa una función que obtenga un numero aleatorio entre 501 y 600.        
+           //10) Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro), pe. miFuncion(2002) devolverá true.
+           //11) Programa una función que calcule el factorial de un número (El factorial de un entero positivo n, se define como el producto de todos los números enteros positivos desde 1 hasta n), pe. miFuncion(5) devolverá 120.**/
+        let HolaMundo3="Hola Mundo".split("");
+        let invertir= HolaMundo3.reverse();//5
+        let juntar= invertir.join(" ");
+        console.log(juntar);
+        
+       function ContadorOcurrencias(HolaMundo4, subcadena){
+           let contadorOcurrencias=0;
+           let posicion=0;
+           while((posicion=HolaMundo4.indexOf(subcadena, posicion)) !== -1){//6
+               ++contadorOcurrencias;
+               posicion += subcadena.length;
+           }
+           return contadorOcurrencias;
+       }
+       
+       let HolaMundo4="Hola Mundo Adios Mundo";
+       console.log(ContadorOcurrencias(HolaMundo4,'Mundo'))
+
+        function palindromo(str) {
+        const strReversed = str.split("").reverse().join("");
+
+        return strReversed === str ? "es palindromo" : "no es palindromo";//7
+        }
+            console.log(palindromo("salas"));
+
+        let xyz="xyz1, xyz2, xyz3, xyz4 y xyz 5";//8
+        console.log(xyz.replaceAll("xyz",""));
+
+        function random(min, max){
+            return Math.floor(Math.random()*(max - min+1))+min;
+        }
+        let numeroaleatorio= random(501,600);
+        console.log("Número aleatorio", numeroaleatorio);//9
+
+        function capicua(str) {
+        const strReversed = str.split("").reverse().join("");
+
+        return strReversed === str ? "true" : "false";//10
+        }
+            console.log(capicua("2002"));
+
+        function factorial (n) {
+	    var total = 1; 
+	    for (i=1; i<=n; i++) {
+		    total = total * i; 
+	    }
+	    return total; 
+        }
+        let n=  factorial(5)
+        console.log(n)
+    </script>
+</body>
+</html>
